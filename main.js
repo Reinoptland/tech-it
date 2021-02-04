@@ -206,10 +206,11 @@ const totalCount = countInventoryToSell(inventory);
 // - [x] Rekenwerk
 // - [x] HTML element maken
 // - [x] Element selecteren waar de count moet worden weergegeven
-// - [ ] textContent aanpassen met de totalCount
-// - [ ] Rood maken (al gedaan in css)
+// - [x] textContent aanpassen met de totalCount
+// - [x] Rood maken (al gedaan in css)
 
 const numberToSell = document.getElementById("numberToSell");
+numberToSell.textContent = totalCount;
 
 console.log(numberToSell);
 console.log("OUTSIDE?", totalCount);
