@@ -184,8 +184,8 @@ const inventory = [
 
 // - [x] functie maken
 // - [x] aanroepen
-// - [ ] parameter toevoegen (inventory)
-// - [ ] inventory ingeven als argument
+// - [x] parameter toevoegen (inventory)
+// - [x] inventory ingeven als argument
 // - [ ] count variabele (buiten de loop)
 // - [ ] loop maken (voor elke televisie)
 // - [ ] originalStock - sold optellen bij count
@@ -193,6 +193,8 @@ const inventory = [
 
 function countInventoryToSell(televisions) {
   console.log("SALES!", televisions);
+  let count = 0;
+  console.log("TOTAL COUNT:", count);
 }
 
 countInventoryToSell(inventory);
