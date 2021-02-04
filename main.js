@@ -254,9 +254,13 @@ const soldOut = inventory.filter((television) => {
     "hi",
     television.originalStock,
     television.sold,
-    television.originalStock === television.sold
+    television.originalStock === television.sold // true of false
   );
+
+  return television.originalStock === television.sold;
 });
+
+console.log("UITVERKOCHT?", soldOut);
 
 // Opdracht 2c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 // FILTER -> [{}, {}, {}, {}] -> [{}, {}]
