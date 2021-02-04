@@ -182,8 +182,8 @@ const inventory = [
 // nog te verkopen: originalStock - sold
 // optellen bij het totaal
 
-// - [ ] functie maken
-// - [ ] aanroepen
+// - [x] functie maken
+// - [x] aanroepen
 // - [ ] parameter toevoegen (inventory)
 // - [ ] inventory ingeven als argument
 // - [ ] count variabele (buiten de loop)
@@ -191,10 +191,10 @@ const inventory = [
 // - [ ] originalStock - sold optellen bij count
 // - [ ] Totaal return uit de functie
 
-function countInventoryToSell() {
-  console.log("SALES!");
+function countInventoryToSell(televisions) {
+  console.log("SALES!", televisions);
 }
 
-countInventoryToSell();
+countInventoryToSell(inventory);
 
 console.log("hi?");
