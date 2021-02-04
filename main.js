@@ -246,8 +246,8 @@ const tvNames = inventory.map((television) => {
 // - [x] voeg de parameter toe (televisie, product)
 // - [x] zoeken naar de juiste property
 // - [x] check: is de televisie uitverkocht? true of false
-// - [ ] return true of false
-// - [ ] log het resultaat
+// - [x] return true of false
+// - [x] log het resultaat
 
 const soldOut = inventory.filter((television) => {
   return television.originalStock === television.sold;
@@ -260,3 +260,7 @@ const soldOut = inventory.filter((television) => {
 
 // Opdracht 2d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
 // SORT
+
+inventory.sort((televisieA, televisieB) => {
+  console.log("hi", televisieA, televisieB);
+});
