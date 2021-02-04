@@ -188,12 +188,12 @@ const inventory = [
 // - [x] inventory ingeven als argument
 // - [x] count variabele (buiten de loop)
 // - [x] loop maken (voor elke televisie)
-// - [ ] originalStock - sold optellen bij count
-// - [ ] Totaal return uit de functie
+// - [x] originalStock - sold optellen bij count
+// - [x] Totaal return uit de functie
 
 function countInventoryToSell(televisions) {
   console.log("SALES!", televisions);
-  let count = 0;
+  let totalCount = 0;
   for (const television of televisions) {
     console.log(
       "TELEVISION IN LOOP",
@@ -203,11 +203,12 @@ function countInventoryToSell(televisions) {
 
     const toSellOfThisType = television.originalStock - television.sold;
     console.log(toSellOfThisType);
-    count = count + toSellOfThisType;
+    totalCount = totalCount + toSellOfThisType;
   }
-  console.log("TOTAL COUNT:", count);
+  console.log("TOTAL totalCount:", totalCount);
+  return totalCount;
 }
 
-countInventoryToSell(inventory);
+const totalCount = countInventoryToSell(inventory);
 
-console.log("hi?");
+console.log("OUTSIDE?", totalCount);
