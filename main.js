@@ -191,7 +191,10 @@ const inventory = [
 // - [ ] originalStock - sold optellen bij count
 // - [ ] Totaal return uit de functie
 
-// SECRET STRAT
-// array.reduce()
+function countInventoryToSell() {
+  console.log("SALES!");
+}
+
+countInventoryToSell();
 
 console.log("hi?");
