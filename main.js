@@ -194,7 +194,6 @@ const inventory = [
 function countInventoryToSell(televisions) {
   console.log("SALES!", televisions);
   let count = 0;
-  console.log("TOTAL COUNT:", count);
   for (const television of televisions) {
     console.log(
       "TELEVISION IN LOOP",
@@ -204,7 +203,9 @@ function countInventoryToSell(televisions) {
 
     const toSellOfThisType = television.originalStock - television.sold;
     console.log(toSellOfThisType);
+    count = count + toSellOfThisType;
   }
+  console.log("TOTAL COUNT:", count);
 }
 
 countInventoryToSell(inventory);
