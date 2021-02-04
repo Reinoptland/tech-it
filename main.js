@@ -192,20 +192,11 @@ const inventory = [
 // - [x] Totaal return uit de functie
 
 function countInventoryToSell(televisions) {
-  console.log("SALES!", televisions);
   let totalCount = 0;
   for (const television of televisions) {
-    console.log(
-      "TELEVISION IN LOOP",
-      television.originalStock,
-      television.sold
-    );
-
     const toSellOfThisType = television.originalStock - television.sold;
-    console.log(toSellOfThisType);
     totalCount = totalCount + toSellOfThisType;
   }
-  console.log("TOTAL totalCount:", totalCount);
   return totalCount;
 }
 
