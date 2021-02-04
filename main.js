@@ -265,4 +265,7 @@ inventory.sort((televisieA, televisieB) => {
   console.log("hi", televisieA.price, televisieB.price);
   const difference = televisieA.price - televisieB.price;
   console.log(difference);
+  return difference;
 });
+
+console.log("SORTED?", inventory);
