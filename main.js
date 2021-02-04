@@ -240,14 +240,18 @@ const tvNames = inventory.map((television) => {
 
 // Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 // FILTER -> [{}, {}, {}, {}] -> [{}, {}]
-// - [ ] maak variabele voor de uitkomst
-// - [ ] inventory.filter()
-// - [ ] geef een functie aan map als argument
+// - [x] maak variabele voor de uitkomst
+// - [x] inventory.filter()
+// - [x] geef een functie aan filter als argument
 // - [ ] voeg de parameter toe (televisie, product)
 // - [ ] zoeken naar de juiste property
 // - [ ] check: is de televisie uitverkocht? true of false
 // - [ ] return true of false
 // - [ ] log het resultaat
+
+const soldOut = inventory.filter(() => {
+  console.log("hi");
+});
 
 // Opdracht 2c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 // FILTER -> [{}, {}, {}, {}] -> [{}, {}]
