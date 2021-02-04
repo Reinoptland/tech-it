@@ -262,5 +262,7 @@ const soldOut = inventory.filter((television) => {
 // SORT
 
 inventory.sort((televisieA, televisieB) => {
-  console.log("hi", televisieA, televisieB);
+  console.log("hi", televisieA.price, televisieB.price);
+  const difference = televisieA.price - televisieB.price;
+  console.log(difference);
 });
