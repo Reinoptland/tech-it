@@ -191,12 +191,14 @@ const inventory = [
 // - [x] originalStock - sold optellen bij count
 // - [x] Totaal return uit de functie
 
-function countInventoryToSell(televisions) {
+function countInventoryToSell(products) {
   let totalCount = 0;
-  for (const television of televisions) {
-    const toSellOfThisType = television.originalStock - television.sold;
+
+  for (const product of products) {
+    const toSellOfThisType = product.originalStock - product.sold;
     totalCount = totalCount + toSellOfThisType;
   }
+
   return totalCount;
 }
 
