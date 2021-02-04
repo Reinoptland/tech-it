@@ -250,17 +250,10 @@ const tvNames = inventory.map((television) => {
 // - [ ] log het resultaat
 
 const soldOut = inventory.filter((television) => {
-  console.log(
-    "hi",
-    television.originalStock,
-    television.sold,
-    television.originalStock === television.sold // true of false
-  );
-
   return television.originalStock === television.sold;
 });
 
-console.log("UITVERKOCHT?", soldOut);
+// console.log("UITVERKOCHT?", soldOut);
 
 // Opdracht 2c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 // FILTER -> [{}, {}, {}, {}] -> [{}, {}]
