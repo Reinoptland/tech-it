@@ -226,15 +226,18 @@ numberToSell.textContent = totalCount;
 // MAP -> [{}, {}, {}] -> ['fancy samsung', 'fancier samsung', 'lg big screen']
 // - [x] maak variabele voor de uitkomst
 // - [x] inventory.map()
-// - [ ] geef een functie aan map als argument
-// - [ ] voeg de parameter toe (televisie, product)
-// - [ ] zoeken naar de juiste property
-// - [ ] return de juiste property
-// - [ ] log het resultaat
+// - [x] geef een functie aan map als argument
+// - [x] voeg de parameter toe (televisie, product)
+// - [x] zoeken naar de juiste property
+// - [x] return de juiste property
+// - [x] log het resultaat
 
-const tvNames = inventory.map(() => {
-  console.log("hi");
+const tvNames = inventory.map((television) => {
+  console.log("hi", television.brand, television.name);
+  return `${television.brand} ${television.name}`;
 });
+
+console.log("UITKOMST:", tvNames);
 
 // Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 // FILTER -> [{}, {}, {}, {}] -> [{}, {}]
