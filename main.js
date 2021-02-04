@@ -233,11 +233,10 @@ numberToSell.textContent = totalCount;
 // - [x] log het resultaat
 
 const tvNames = inventory.map((television) => {
-  console.log("hi", television.brand, television.name);
   return `${television.brand} ${television.name}`;
 });
 
-console.log("UITKOMST:", tvNames);
+// console.log("UITKOMST:", tvNames);
 
 // Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 // FILTER -> [{}, {}, {}, {}] -> [{}, {}]
