@@ -214,5 +214,41 @@ const totalCount = countInventoryToSell(inventory);
 const numberToSell = document.getElementById("numberToSell");
 numberToSell.textContent = totalCount;
 
-console.log(numberToSell);
-console.log("OUTSIDE?", totalCount);
+// console.log(numberToSell);
+// console.log("OUTSIDE?", totalCount);
+
+// map
+// filter?
+// find?
+// sort?
+
+// Opdracht 2a: Gebruik een array-methode om een array te maken met alle tv-type namen.
+// MAP -> [{}, {}, {}] -> ['fancy samsung', 'fancier samsung', 'lg big screen']
+// - [x] maak variabele voor de uitkomst
+// - [x] inventory.map()
+// - [ ] geef een functie aan map als argument
+// - [ ] voeg de parameter toe (televisie, product)
+// - [ ] zoeken naar de juiste property
+// - [ ] return de juiste property
+// - [ ] log het resultaat
+
+const tvNames = inventory.map(() => {
+  console.log("hi");
+});
+
+// Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
+// FILTER -> [{}, {}, {}, {}] -> [{}, {}]
+// - [ ] maak variabele voor de uitkomst
+// - [ ] inventory.filter()
+// - [ ] geef een functie aan map als argument
+// - [ ] voeg de parameter toe (televisie, product)
+// - [ ] zoeken naar de juiste property
+// - [ ] check: is de televisie uitverkocht? true of false
+// - [ ] return true of false
+// - [ ] log het resultaat
+
+// Opdracht 2c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
+// FILTER -> [{}, {}, {}, {}] -> [{}, {}]
+
+// Opdracht 2d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
+// SORT
