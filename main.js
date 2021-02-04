@@ -202,4 +202,14 @@ function countInventoryToSell(televisions) {
 
 const totalCount = countInventoryToSell(inventory);
 
+// Weergeven op pagina
+// - [x] Rekenwerk
+// - [x] HTML element maken
+// - [x] Element selecteren waar de count moet worden weergegeven
+// - [ ] textContent aanpassen met de totalCount
+// - [ ] Rood maken (al gedaan in css)
+
+const numberToSell = document.getElementById("numberToSell");
+
+console.log(numberToSell);
 console.log("OUTSIDE?", totalCount);
