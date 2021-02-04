@@ -1,0 +1,33 @@
+body {
+  background-color: ivory;
+  font-family: "Oswald", sans-serif;
+}
+nav {
+  margin-bottom: 1rem;
+}
+
+.nav__logo {
+  height: 50px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashboard__item {
+  width: 200px;
+  text-align: center;
+}
+
+.dashboard__item--warning {
+  background-color: firebrick;
+}
+
+.dashboard__item--primary {
+  background-color: dodgerblue;
+}
+
+.dashboard__item--success {
+  background-color: limegreen;
+}
