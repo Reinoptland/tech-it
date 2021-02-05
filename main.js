@@ -304,12 +304,13 @@ inventory.sort((televisieA, televisieB) => {
 function calculateTargetRevenue(products) {
   console.log("INPUT?", products);
   let revenueTarget = 0;
-  console.log("TARGET:", revenueTarget);
   for (const product of products) {
     console.log("1 PRODUCT IN LOOP:", product.originalStock, product.price);
     const revenueTargetPerProduct = product.originalStock * product.price;
     console.log(revenueTargetPerProduct);
+    revenueTarget = revenueTarget + revenueTargetPerProduct;
   }
+  console.log("TARGET:", revenueTarget);
 }
 
 calculateTargetRevenue(inventory);
