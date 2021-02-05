@@ -359,11 +359,13 @@ function calculateCurrentRevenue(products) {
 
 // <li class="product-list__item">Philips 43PUS6504/12 - 4K TV</li>
 
+// [merk] [type] - [naam] zoals Philips 43PUS6504/12 - 4K TV of NIKKEI
 // voor 1 televisie
 function displayProduct(product) {
   const tvElement = document.createElement("li");
   tvElement.setAttribute("class", "product-list__item");
-  const tvType = product.type;
+  console.log("PRODUCT IN FUNCTION", product.brand, product.type, product.name);
+  const tvType = `${product.brand} ${product.type} - ${product.name}`;
   tvElement.textContent = tvType;
 
   const list = document.getElementById("productList");
