@@ -302,20 +302,17 @@ inventory.sort((televisieA, televisieB) => {
 // - [ ] Totaal return uit de functie
 
 function calculateTargetRevenue(products) {
-  console.log("INPUT?", products);
   let revenueTarget = 0;
   for (const product of products) {
-    console.log("1 PRODUCT IN LOOP:", product.originalStock, product.price);
     const revenueTargetPerProduct = product.originalStock * product.price;
-    console.log(revenueTargetPerProduct);
     revenueTarget = revenueTarget + revenueTargetPerProduct;
   }
-  console.log("TARGET:", revenueTarget);
+
   return revenueTarget;
 }
 
 const revenueTarget = calculateTargetRevenue(inventory);
-console.log("OUTSIDE?", revenueTarget);
+// console.log("OUTSIDE?", revenueTarget);
 
 // OP DE PAGINA ZETTEN:
 
