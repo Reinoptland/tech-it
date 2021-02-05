@@ -311,9 +311,11 @@ function calculateTargetRevenue(products) {
     revenueTarget = revenueTarget + revenueTargetPerProduct;
   }
   console.log("TARGET:", revenueTarget);
+  return revenueTarget;
 }
 
-calculateTargetRevenue(inventory);
+const revenueTarget = calculateTargetRevenue(inventory);
+console.log("OUTSIDE?", revenueTarget);
 
 // OP DE PAGINA ZETTEN:
 
