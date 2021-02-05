@@ -327,3 +327,24 @@ revenueTargetElement.textContent = `€ ${revenueTarget}`;
 // - [x] Het element selecteren (variabele / getElementById)
 // - [x] De content veranderen (.textContent)
 // - [x] Kleurtje geven (CSS)
+
+// Geef de type-namen van twee tv's weer op de pagina.
+// Welke tv's dat precies zijn, maakt niet zoveel uit.
+// Voor nu betekent dit dat je het appenden van de nodes
+// twee keer moet uitschrijven, dat is niet erg!
+
+// getElementById <--
+// .textContent <--
+// getElementsByClassName
+// setAttribute
+// removeAttribute
+// appendChild <--
+// createElement <--
+// addEventListener
+
+// STRATEGIE
+// - We maken een lijst element in de html (ul) (html)
+// - Die lijst krijgt een id (html)
+// - We maken 2 "tv" elementen (createElement)
+// - Daar zetten we de juiste text in (textContent, array[0], array[1])
+// - Plakken we de elementen op de pagina (appendChild)
