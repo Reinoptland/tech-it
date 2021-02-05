@@ -327,6 +327,14 @@ revenueTargetElement.textContent = `€ ${revenueTarget}`;
 // - [x] Het element selecteren (variabele / getElementById)
 // - [x] De content veranderen (.textContent)
 // - [x] Kleurtje geven (CSS)
+function calculateCurrentRevenue(products) {
+  // Example of reduce (not part of learning goals)
+  return products.reduce((currentRevenue, product) => {
+    return currentRevenue + product.sold * product.price;
+  }, 0);
+}
+
+// console.log(calculateCurrentRevenue(inventory));
 
 // Geef de type-namen van twee tv's weer op de pagina.
 // Welke tv's dat precies zijn, maakt niet zoveel uit.
@@ -343,8 +351,19 @@ revenueTargetElement.textContent = `€ ${revenueTarget}`;
 // addEventListener
 
 // STRATEGIE
-// - We maken een lijst element in de html (ul) (html)
-// - Die lijst krijgt een id (html)
-// - We maken 2 "tv" elementen (createElement)
-// - Daar zetten we de juiste text in (textContent, array[0], array[1])
+// - [x] We maken een lijst element in de html (ul) (html)
+// - [x] Die lijst krijgt een id (html)
+// - [x] We maken 2 "tv" elementen (createElement)
+// - [x] Daar zetten we de juiste text in (textContent, array[0], array[1])
 // - Plakken we de elementen op de pagina (appendChild)
+
+// <li class="product-list__item">Philips 43PUS6504/12 - 4K TV</li>
+
+const tvElement = document.createElement("li");
+tvElement.setAttribute("class", "product-list__item");
+const tvType = inventory[0].type;
+tvElement.textContent = tvType;
+
+const list = document.getElementById("productList");
+list.appendChild(tvElement);
+console.log(tvElement, list);
