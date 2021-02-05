@@ -297,8 +297,8 @@ inventory.sort((televisieA, televisieB) => {
 // - [x] parameter toevoegen (inventory)
 // - [x] inventory ingeven als argument
 // - [x] count variabele (buiten de loop)
-// - [ ] loop maken (voor elke televisie)
-// - [ ] originalStock - sold optellen bij count
+// - [x] loop maken (voor elke televisie)
+// - [ ] originalStock x price optellen bij count
 // - [ ] Totaal return uit de functie
 
 function calculateTargetRevenue(products) {
@@ -306,7 +306,9 @@ function calculateTargetRevenue(products) {
   let revenueTarget = 0;
   console.log("TARGET:", revenueTarget);
   for (const product of products) {
-    console.log("1 PRODUCT IN LOOP:", product);
+    console.log("1 PRODUCT IN LOOP:", product.originalStock, product.price);
+    const revenueTargetPerProduct = product.originalStock * product.price;
+    console.log(revenueTargetPerProduct);
   }
 }
 
