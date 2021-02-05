@@ -292,8 +292,8 @@ inventory.sort((televisieA, televisieB) => {
 
 // VOOR DE TODOLIST: check opdracht 1 (lijkt heel erg)
 
-// - [ ] functie maken
-// - [ ] aanroepen
+// - [x] functie maken
+// - [x] aanroepen
 // - [ ] parameter toevoegen (inventory)
 // - [ ] inventory ingeven als argument
 // - [ ] count variabele (buiten de loop)
@@ -301,11 +301,11 @@ inventory.sort((televisieA, televisieB) => {
 // - [ ] originalStock - sold optellen bij count
 // - [ ] Totaal return uit de functie
 
-function calculateTargetRevenue() {
-  console.log("AANGEROEPEN?");
+function calculateTargetRevenue(products) {
+  console.log("INPUT?", products);
 }
 
-calculateTargetRevenue();
+calculateTargetRevenue(inventory);
 
 // OP DE PAGINA ZETTEN:
 
