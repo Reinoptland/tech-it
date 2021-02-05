@@ -317,11 +317,13 @@ const revenueTarget = calculateTargetRevenue(inventory);
 const revenueTargetElement = document.getElementById("targetRevenue");
 console.log("FOUND??", revenueTargetElement);
 
+revenueTargetElement.textContent = `€ ${revenueTarget}`;
+
 // OP DE PAGINA ZETTEN:
 
 // - Zelfde als 1B
 // - [x] element maken (html)
 // - [x] id moeten voegen (html)
 // - [x] Het element selecteren (variabele / getElementById)
-// - [ ] De content veranderen (.textContent)
-// - [ ] Kleurtje geven (CSS)
+// - [x] De content veranderen (.textContent)
+// - [x] Kleurtje geven (CSS)
