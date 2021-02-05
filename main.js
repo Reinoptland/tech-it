@@ -362,7 +362,7 @@ function calculateCurrentRevenue(products) {
 // voor 1 televisie
 function displayProduct(product) {
   const tvElement = document.createElement("li");
-  tvElement.setAttribute("class", "product-list__information");
+  tvElement.setAttribute("class", "product-list__item");
   const tvType = product.type;
   tvElement.textContent = tvType;
 
