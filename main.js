@@ -359,11 +359,18 @@ function calculateCurrentRevenue(products) {
 
 // <li class="product-list__item">Philips 43PUS6504/12 - 4K TV</li>
 
-const tvElement = document.createElement("li");
-tvElement.setAttribute("class", "product-list__item");
-const tvType = inventory[0].type;
-tvElement.textContent = tvType;
+// voor 1 televisie
+function displayProduct(product) {
+  const tvElement = document.createElement("li");
+  tvElement.setAttribute("class", "product-list__information");
+  const tvType = product.type;
+  tvElement.textContent = tvType;
 
-const list = document.getElementById("productList");
-list.appendChild(tvElement);
-console.log(tvElement, list);
+  const list = document.getElementById("productList");
+  list.appendChild(tvElement);
+}
+
+for (let index = 0; index < inventory.length; index++) {
+  const product = inventory[index];
+  displayProduct(product);
+}
