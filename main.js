@@ -314,11 +314,14 @@ function calculateTargetRevenue(products) {
 const revenueTarget = calculateTargetRevenue(inventory);
 // console.log("OUTSIDE?", revenueTarget);
 
+const revenueTargetElement = document.getElementById("targetRevenue");
+console.log("FOUND??", revenueTargetElement);
+
 // OP DE PAGINA ZETTEN:
 
 // - Zelfde als 1B
-// - [ ] element maken (html)
-// - [ ] id moeten voegen (html)
-// - [ ] Het element selecteren (variabele / getElementById)
+// - [x] element maken (html)
+// - [x] id moeten voegen (html)
+// - [x] Het element selecteren (variabele / getElementById)
 // - [ ] De content veranderen (.textContent)
 // - [ ] Kleurtje geven (CSS)
