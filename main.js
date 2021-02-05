@@ -192,6 +192,7 @@ const inventory = [
 // - [x] Totaal return uit de functie
 
 function countInventoryToSell(products) {
+  // local scope
   let totalCount = 0;
 
   for (const product of products) {
@@ -202,6 +203,7 @@ function countInventoryToSell(products) {
   return totalCount;
 }
 
+// global
 const totalCount = countInventoryToSell(inventory);
 
 // Weergeven op pagina
@@ -264,5 +266,37 @@ const soldOut = inventory.filter((television) => {
 inventory.sort((televisieA, televisieB) => {
   return televisieA.price - televisieB.price;
 });
-
 // console.log("SORTED?", inventory);
+
+// Opdracht 3a: Wat is onze doel-opbrengst?
+// Bereken wat de totale opbrengst is, als we
+// alle exemplaren van ieder type zouden verkopen.
+// Geef dit in het blauw weer op de pagina.
+
+// STRATEGIE:
+// MAYBE (tussenstap): MAP [{}, {}, {}, {}, {}, {}, {}, {}] -> [8717, 636, (nog 6 uitkomsten)]
+// NOPE: FIND [{}, {}, {}, {}] -> {}
+// NOPE: FILTER (we moeten alles doen, dus geen filter nodig)
+// NOPE: SORT (volgorde)
+// Iets anders (loop)
+
+// 1. MAP -> LOOP
+// - MAP -> [8717, 636, (nog 6 uitkomsten)]
+// - LOOP  [8717, 636, (nog 6 uitkomsten)] -> eindbedrag
+
+// 2. 1 x LOOPEN
+// - counter (totaalbedrag)
+// - LOOP
+// - Voor elke type: originalStock * price
+// - optellen bij het totaal bedrag
+
+// VOOR DE TODOLIST: check opdracht 1 (lijkt heel erg)
+
+// OP DE PAGINA ZETTEN:
+
+// - Zelfde als 1B
+// - [ ] element maken (html)
+// - [ ] id moeten voegen (html)
+// - [ ] Het element selecteren (variabele / getElementById)
+// - [ ] De content veranderen (.textContent)
+// - [ ] Kleurtje geven (CSS)

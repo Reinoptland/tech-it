@@ -1,13 +1,33 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
 body {
-  background-color: ivory;
+  background-color: #b8b8b8;
   font-family: "Oswald", sans-serif;
+  color: white;
+  margin: 0px;
 }
 nav {
+  height: 5rem;
   margin-bottom: 1rem;
+  background-color: #d8d8d8;
 }
 
 .nav__logo {
-  height: 50px;
+  height: 5rem;
 }
 
 .dashboard {
@@ -16,7 +36,9 @@ nav {
 }
 
 .dashboard__item {
-  width: 200px;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  width: 15rem;
   text-align: center;
 }
 
