@@ -305,6 +305,9 @@ function calculateTargetRevenue(products) {
   console.log("INPUT?", products);
   let revenueTarget = 0;
   console.log("TARGET:", revenueTarget);
+  for (const product of products) {
+    console.log("1 PRODUCT IN LOOP:", product);
+  }
 }
 
 calculateTargetRevenue(inventory);
