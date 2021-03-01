@@ -274,11 +274,11 @@ inventory.sort((televisieA, televisieB) => {
 // Geef dit in het blauw weer op de pagina.
 
 // STRATEGIE:
-// MAYBE (tussenstap): MAP [{}, {}, {}, {}, {}, {}, {}, {}] -> [8717, 636, (nog 6 uitkomsten)]
-// NOPE: FIND [{}, {}, {}, {}] -> {}
-// NOPE: FILTER (we moeten alles doen, dus geen filter nodig)
-// NOPE: SORT (volgorde)
-// Iets anders (loop)
+// ?
+// ?
+// ?
+// ?
+// Iets anders
 
 // 1. MAP -> LOOP
 // - MAP -> [8717, 636, (nog 6 uitkomsten)]
@@ -364,7 +364,6 @@ function calculateCurrentRevenue(products) {
 function displayProduct(product) {
   const tvElement = document.createElement("li");
   tvElement.setAttribute("class", "product-list__item");
-  console.log("PRODUCT IN FUNCTION", product.brand, product.type, product.name);
   const tvType = `${product.brand} ${product.type} - ${product.name}`;
   tvElement.textContent = tvType;
 
@@ -376,3 +375,10 @@ for (let index = 0; index < inventory.length; index++) {
   const product = inventory[index];
   displayProduct(product);
 }
+
+// aangezien ik alles moet omzetten gebruik ik map
+const tvSizes = inventory.map((television) => {
+  return `${television.availableSizes} `;
+});
+
+console.log(tvSizes);
